@@ -1,4 +1,4 @@
-# CodeIgniter-mathcaptcha
+# CodeIgniter-math-captcha
 Math CAPTCHA Library for CodeIgniter, generate random sum of numbers
 # usage
 
