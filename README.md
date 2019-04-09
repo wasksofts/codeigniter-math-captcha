@@ -19,18 +19,18 @@ codeigniter  mathcapta library
          return $this->mathcaptcha->_check_captcha($code);
       }
      
-       <table>  
-					  <tr>
-		          <td colspan="3">
-			          <p>Answer this math quiz : <?php echo $captcha_html; ?></p>
-		           </td>
-	           </tr>
-	           <tr>
-	              <td>
-	               <?= form_input(["id"=>"captcha" ,"name"=>"captcha","type"=>"text","placeholder"=>"answer" ,"required"=>"true"]);?><br>
-						         <?php echo form_error('captcha'); ?> <br />   
-						   </td>
-	            </tr>                  
-	         </table>			
-				 <input type="submit" value="SEND"/>
-			 </form>
+     //add this html part to your form
+     <table>  
+       <tr>
+        <td colspan="3">
+	  <p>Answer this math quiz : <?php echo $captcha_html; ?></p>
+        </td>
+	</tr>
+	<tr>
+	 <td>
+	   <?= form_input(["id"=>"captcha" ,"name"=>"captcha","type"=>"text","placeholder"=>"answer" ,"required"=>"true"]);?><br>
+           <?php echo form_error('captcha'); ?> <br />   
+	</td>
+        </tr>                  
+      </table>			
+	
