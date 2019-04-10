@@ -35,4 +35,8 @@ Math CAPTCHA Library for CodeIgniter, generate random sum of numbers
     
    # Bugs and feature requests
 Have a bug or a feature request? please email mukamanusteven@gmail.com
+
+   # donate
+   [![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BCPJC49Z4ZBLG)
+   
 	
