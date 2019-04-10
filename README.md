@@ -31,5 +31,8 @@ Math CAPTCHA Library for CodeIgniter, generate random sum of numbers
            <?php echo form_error('captcha'); ?> <br />   
 	</td>
         </tr>                  
-      </table>			
+      </table>
+    
+   # Bugs and feature requests
+Have a bug or a feature request? please email mukamanusteven@gmail.com
 	
