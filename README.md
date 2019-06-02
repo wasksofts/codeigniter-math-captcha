@@ -8,7 +8,7 @@ Math CAPTCHA Library for CodeIgniter, generate random sum of numbers
       $this->form_validation->set_rules('captcha', 'captcha', 'trim|xss_clean|required|callback__check_captcha');
 	    
       
-      //view to display capta image
+      //view to display captcha image
       $data['show_captcha']    = TRUE;
       $data['captcha_html']    = $this->mathcaptcha->create_captcha();
         
