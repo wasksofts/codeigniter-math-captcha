@@ -1,12 +1,12 @@
 {
-    "name": "wasksofts/codeIgniter-math-captcha",
+    "name": "wasksofts/codeigniter-math-captcha",
     "type": "library",
     "description": "captcha verification with math",
     "keywords": [
         "codeigniter",
         "math-captcha"
     ],
-    "homepage": "https://github.com/wasksofts/codeIgniter-math-captcha",
+    "homepage": "https://github.com/wasksofts/codeigniter-math-captcha",
     "license": "MIT",
     "authors": [
         {
@@ -16,7 +16,7 @@
         }
     ], 
     "autoload": {
-       "classmap": ["src/Mpesa.php"]
+       "classmap": ["src/MathCaptcha.php"]
     },
     "require": {
         "php": "^5.6|^7"
