@@ -1,0 +1,24 @@
+{
+    "name": "wasksofts/CodeIgniter-math-captcha",
+    "type": "library",
+    "description": "captcha verification with math",
+    "keywords": [
+        "codeigniter",
+        "math-captcha",
+    ],
+    "homepage": "https://github.com/wasksofts/CodeIgniter-math-captcha",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "stevenkamanu",
+            "email": "mukamanusteven@gmail.com",
+            "homepage": "https://wasksofts.com"
+        }
+    ], 
+    "autoload": {
+       "classmap": ["src/Mpesa.php"]
+    },
+    "require": {
+        "php": "^5.6|^7"
+    }
+}
