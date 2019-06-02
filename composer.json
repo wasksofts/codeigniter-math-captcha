@@ -1,12 +1,12 @@
 {
-    "name": "wasksofts/CodeIgniter-math-captcha",
+    "name": "wasksofts/codeIgniter-math-captcha",
     "type": "library",
     "description": "captcha verification with math",
     "keywords": [
         "codeigniter",
         "math-captcha"
     ],
-    "homepage": "https://github.com/wasksofts/CodeIgniter-math-captcha",
+    "homepage": "https://github.com/wasksofts/codeIgniter-math-captcha",
     "license": "MIT",
     "authors": [
         {
