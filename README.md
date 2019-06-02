@@ -1,5 +1,13 @@
 # CodeIgniter-math-captcha
 Math CAPTCHA Library for CodeIgniter, generate random sum of numbers
+
+# Install
+
+Install the libray for using by autoload.
+
+``` bash
+$ composer require wasksofts/codeigniter-math-captcha
+```
 # usage
 
      //load library from controller
