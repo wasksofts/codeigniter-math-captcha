@@ -4,7 +4,7 @@
     "description": "captcha verification with math",
     "keywords": [
         "codeigniter",
-        "math-captcha",
+        "math-captcha"
     ],
     "homepage": "https://github.com/wasksofts/CodeIgniter-math-captcha",
     "license": "MIT",
