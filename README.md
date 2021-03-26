@@ -10,7 +10,8 @@ $ composer require wasksofts/codeigniter-math-captcha
 ```
 # usage
 
-     //load library from controller
+     //load library from controller if you downloaded package directly and added to library folder of codeigniter
+     
       $this->load->library('mathcaptcha');
  
       $this->form_validation->set_rules('captcha', 'captcha', 'trim|xss_clean|required|callback__check_captcha');
