@@ -26,7 +26,7 @@
 	/** generate recapta image
 	 * 
 	 * @access  public
-	 * @return  image
+	 * @return  image png or jpg format
 	 */
 	public function create_captcha()
 	{
