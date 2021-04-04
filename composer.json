@@ -1,7 +1,7 @@
 {
     "name": "wasksofts/codeigniter-math-captcha",
     "type": "library",
-    "description": "captcha verification with math",
+    "description": "captcha verification with math quiz",
     "keywords": [
         "codeigniter",
         "math-captcha"
