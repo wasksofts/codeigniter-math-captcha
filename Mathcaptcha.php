@@ -104,7 +104,7 @@
 		 } elseif (($this->ci->config->item('captcha_case_sensitive', 'auth') AND
 				$code != $word) OR
 				strtolower($code) != strtolower($word)) {
-			$this->ci->form_validation->set_message('_check_captcha', $this->ci->lang->line('auth_captcha_incorrect'));
+			$this->ci->form_validation->set_message('_check_captcha', $this->ci->lang->line('auth_incorrect_captcha'));
 			return FALSE;		
 		 }
 		return TRUE;
