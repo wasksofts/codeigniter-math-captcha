@@ -15,7 +15,7 @@
 $config['captcha_path'] = 'assets/captcha/';
 $config['captcha_width'] = 100;
 $config['captcha_height'] = 20;
-$config['captcha_font_size'] = 28;
+$config['captcha_font_size'] = 16;
 $config['captcha_expire'] = 60 * 3;
 $config['captcha_case_sensitive'] = TRUE;
 
