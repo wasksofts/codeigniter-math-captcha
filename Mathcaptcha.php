@@ -31,7 +31,7 @@
 	public function create_captcha()
 	{
 	    $this->addNum1 = rand(0, 10) * rand(1, 3);
-		$this->addNum2 = rand(0, 10) * rand(1, 3);
+	    $this->addNum2 = rand(0, 10) * rand(1, 3);
 		
 		// Set the captcha result for current captcha and set it to the session for later check
 		// $_SESSION[$this->captchaID] = $this->answer = $this->addNum1 + $this->addNum2;
@@ -43,8 +43,8 @@
           
          
 	     $word = $this->addNum1 . ' + ' . $this->addNum2 . ' = ';
-	     $img_width  = 99;
-	     $img_height = 20;
+	     $img_width  = $this->ci->config->item('captcha_width', 'auth');
+	     $img_height = $this->ci->config->item('captcha_height', 'auth');
 	     $cap = $this->create_image($word ,$img_width,$img_height);
 	     
 	     return $cap['img'];
