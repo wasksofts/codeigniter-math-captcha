@@ -77,11 +77,11 @@
 	    imagedestroy($img);   
         
     
-        $img_url = base_url("assets/captcha/".$now.".png");
+            $img_url = base_url("assets/captcha/".$now.".png");
 	    $img = '<img  src="'.$img_url.'" style="width: '.$width.'; height: '.$height .'; border: 0;" alt=" " />';
 		
 		return [ "img" => $img ];
-   }
+        }
    
    
 	/** check capta exist on session
@@ -110,13 +110,16 @@
 		return TRUE;
 	 }
 	
-    /**
+	  //---------------------------------------------------------------------------------------------------------------------------------
+	  //        GOOGLE RECAPTCHA
+	  //----------------------------------------------------------------------------------------------------------------------------------
+        /**
 	 * Create reCAPTCHA JS and non-JS HTML to verify user as a human
 	 *
 	 * @access  public 
 	 * @return	string
 	 */
-    public function _create_recaptcha()
+        public function _create_recaptcha()
 	{
 		$this->ci->load->helper('recaptcha');
 
@@ -129,7 +132,7 @@
 		return $options.$html;
 	 }
 
-    /**
+         /**
 	 * Callback function. Check if reCAPTCHA test is passed.
 	 *
 	 * @access  public
