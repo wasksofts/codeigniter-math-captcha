@@ -104,55 +104,11 @@
 		 } elseif (($this->ci->config->item('captcha_case_sensitive', 'auth') AND
 				$code != $word) OR
 				strtolower($code) != strtolower($word)) {
-			$this->ci->form_validation->set_message('_check_captcha', 'Incorrect answer!');
+			$this->ci->form_validation->set_message('_check_captcha', $this->ci->lang->line('auth_captcha_incorrect'));
 			return FALSE;		
 		 }
 		return TRUE;
 	 }
-	
-	  //---------------------------------------------------------------------------------------------------------------------------------
-	  //        GOOGLE RECAPTCHA
-	  //----------------------------------------------------------------------------------------------------------------------------------
-        /**
-	 * Create reCAPTCHA JS and non-JS HTML to verify user as a human
-	 *
-	 * @access  public 
-	 * @return	string
-	 */
-        public function _create_recaptcha()
-	{
-		$this->ci->load->helper('recaptcha');
-
-		// Add custom theme so we can get only image
-		$options = "<script>var RecaptchaOptions = {theme: 'custom', custom_theme_widget: 'recaptcha_widget'};</script>\n";
-
-		// Get reCAPTCHA JS and non-JS HTML
-		$html = recaptcha_get_html($this->ci->config->item('recaptcha_public_key', 'auth'));
-
-		return $options.$html;
-	 }
-
-         /**
-	 * Callback function. Check if reCAPTCHA test is passed.
-	 *
-	 * @access  public
-	 * @return	bool
-	 */
-	public function _check_recaptcha()
-	{
-		$this->ci->load->helper('recaptcha');
-
-		$resp = recaptcha_check_answer($this->ci->config->item('recaptcha_private_key', 'auth'),
-				$_SERVER['REMOTE_ADDR'],
-				$_POST['recaptcha_challenge_field'],
-				$_POST['recaptcha_response_field']);
-
-		if (!$resp->is_valid) {
-			$this->ci->form_validation->set_message('_check_recaptcha', $this->lang->line('auth_incorrect_captcha'));
-			return FALSE;
-		}
-		return TRUE;
-	}
 	
 	public function image_garbage_collector()
 	{
