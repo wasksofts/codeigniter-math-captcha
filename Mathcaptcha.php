@@ -62,7 +62,7 @@
 	 */
 	public function create_image($word,$width=null,$height=null)
 	{  
-	    $fontsize = 16 ;
+	    $fontsize = $this->ci->config->item('captcha_font_size', 'auth');
 	    $width    = is_null($width) ? 150 : $width;
 	    $height   = is_null($height) ? 30 : $height ;
 	    $img      = imagecreatetruecolor($width, $height); 
