@@ -53,7 +53,7 @@ $ composer require wasksofts/codeigniter-math-captcha
 		</form>
     
     
-  ![Alt text](/wasksofts/codeigniter-math-captcha/screenshot.png?raw=true "view usage")
+  ![Alt text](/screenshot.PNG?raw=true "view usage")
    # Bugs and feature requests
     Have a bug or a feature request? please email mukamanusteven@gmail.com
 
