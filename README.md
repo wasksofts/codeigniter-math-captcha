@@ -52,7 +52,7 @@ $ composer require wasksofts/codeigniter-math-captcha
 			<button type="submit">Submit</button>
 		</form>
     
-    
+ # View Usage
   ![Alt text](/screenshot.PNG?raw=true "view usage")
    # Bugs and feature requests
     Have a bug or a feature request? please email mukamanusteven@gmail.com
