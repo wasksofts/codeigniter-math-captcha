@@ -36,7 +36,6 @@ $ composer require wasksofts/codeigniter-math-captcha
      
    # add this html part to your form
                  <form method="post" action="<?= $this->uri->uri_string() ?>">
-			<?php echo validation_errors(); ?>
 			<table>
 				<tr>
 					<td colspan="3">
