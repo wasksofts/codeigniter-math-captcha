@@ -10,11 +10,11 @@ $ composer require wasksofts/codeigniter-math-captcha
 ```
 # usage
 
-      //controller 
+   # controller 
      class Test extends CI_Controller
      {
-	public function index()
-	{
+	    public function index()
+	  {
 	         $this->load->library('mathcaptcha');
 		$this->form_validation->set_rules('captcha', 'captcha', 'trim|xss_clean|required|callback__check_captcha');
 
@@ -25,16 +25,16 @@ $ composer require wasksofts/codeigniter-math-captcha
 		$data['show_captcha']    = TRUE;
 		$data['captcha_html']    = $this->mathcaptcha->create_captcha();
 		$this->load->view('form_view', $data);
-	}
+	  }
 
-	//this is callback function for validation
-	public function _check_captcha($code)
-	{
+	  //this is callback function for validation
+	   public function _check_captcha($code)
+	  {
 		return $this->mathcaptcha->_check_captcha($code);
-	}
-      }
+	  }
+        }
      
-      //add this html part to your form
+   # add this html part to your form
                  <form method="post" action="<?= $this->uri->uri_string() ?>">
 			<?php echo validation_errors(); ?>
 			<table>
