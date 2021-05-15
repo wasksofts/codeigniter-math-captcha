@@ -52,7 +52,8 @@ $ composer require wasksofts/codeigniter-math-captcha
 			<button type="submit">Submit</button>
 		</form>
     
-    ![Alt text](/codeigniter-math-captcha/screenshot.png?raw=true "Optional Title")
+    
+  ![Alt text](/codeigniter-math-captcha/screenshot.png?raw=true "Optional Title")
    # Bugs and feature requests
     Have a bug or a feature request? please email mukamanusteven@gmail.com
 
